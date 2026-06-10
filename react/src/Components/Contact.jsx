@@ -10,8 +10,8 @@ const Contact = () => {
     e.target.reset();
 
     emailjs
-      .sendForm("service_rge69cv", "template_pdhjxmk", form.current, {
-        publicKey: "U2VDRcfOD2HS-Qsen",
+      .sendForm(`${import.meta.env.VITE_EMAIL_JS_SERVICE}`, `${import.meta.env.VITE_EMAIL_JS_TEMPLATE}`, form.current, {
+        publicKey: `${import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY}`,
       })
       .then(
         () => {
@@ -25,12 +25,12 @@ const Contact = () => {
   return (
     <div id="contactDiv">
       <div className="flex justify-center">
-        <h1 className="text-white lg:text-6xl text-5xl m-15 mb-10 font-semibold">
+        <h1 className="text-white lg:text-6xl text-5xl m-15 mb-10 font-semibold lg:ml-24">
           Contact Me
         </h1>
       </div>
 
-      <div className="text-xl text-gray-400 lg:w-310 flex justify-center text-center mb-5">
+      <div className="text-xl text-gray-400 lg:w-310 flex justify-center text-center mb-5 lg:ml-20">
         <p className="w-200">
           Please fill out the form below to discuss any work opportunities.
         </p>

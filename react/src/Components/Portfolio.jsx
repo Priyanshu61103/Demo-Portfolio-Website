@@ -4,10 +4,10 @@ const Portfolio = () => {
   return (
     <div id="portfolioDiv">
       <div>
-        <h1 className="lg:text-6xl text-5xl text-white font-semibold text-center m-10">
+        <h1 className="lg:text-6xl text-5xl text-white font-semibold text-center m-10 lg:ml-24">
           My portfolio
         </h1>
-        <div className="lg:text-xl text-lg text-gray-400 lg:w-300 flex justify-center">
+        <div className="lg:text-xl text-lg text-gray-400 lg:w-300 flex justify-center lg:ml-20">
           <p className="lg:w-160 text-center">
             I take pride in paying attention to the smallest details and making
             sure that my work is pixel perfect. I am excited to bring my skills
