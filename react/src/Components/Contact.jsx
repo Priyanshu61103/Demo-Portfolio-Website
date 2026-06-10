@@ -6,21 +6,27 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    alert("Email Sent");
-    e.target.reset();
 
     emailjs
-      .sendForm(`${import.meta.env.VITE_EMAIL_JS_SERVICE}`, `${import.meta.env.VITE_EMAIL_JS_TEMPLATE}`, form.current, {
-        publicKey: `${import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY}`,
-      })
+      .sendForm(
+        `${import.meta.env.VITE_EMAIL_JS_SERVICE}`,
+        `${import.meta.env.VITE_EMAIL_JS_TEMPLATE}`,
+        form.current,
+        {
+          publicKey: `${import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY}`,
+        },
+      )
       .then(
         () => {
           console.log("SUCCESS!");
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
+
+    alert("Email Sent");
+    e.target.reset();
   };
   return (
     <div id="contactDiv">
@@ -65,7 +71,12 @@ const Contact = () => {
         </div>
         <div className="flex justify-center">
           <div className="text-xl m-2">
-            <textarea name="message" className="h-50 lg:w-200 w-70 text-gray-300 p-2" placeholder="Your Message" style={{ backgroundColor: "rgb(31, 30, 30)" }}/>
+            <textarea
+              name="message"
+              className="h-50 lg:w-200 w-70 text-gray-300 p-2"
+              placeholder="Your Message"
+              style={{ backgroundColor: "rgb(31, 30, 30)" }}
+            />
           </div>
         </div>
 
