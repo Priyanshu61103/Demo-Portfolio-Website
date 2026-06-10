@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="text-6xl lg:m-10 m-3 font-semibold ">What I do</h1>
       </div>
 
-      <div className="text-xl text-gray-400 lg:w-210 flex justify-center text-center lg:ml-12">
+      <div className="lg:text-xl text-lg text-gray-400 lg:w-210 flex justify-center text-center lg:ml-12">
         <p className="lg:w-200">
           I am a skilled and passionate web designer with experience in creating
           visually apperaring and user-friendly websites. I have a strong

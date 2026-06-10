@@ -30,7 +30,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <div className="text-xl text-gray-400 lg:w-310 flex justify-center text-center mb-5 lg:ml-20">
+      <div className="text-lg lg:text-xl text-gray-400 lg:w-310 flex justify-center text-center mb-5 lg:ml-20">
         <p className="w-200">
           Please fill out the form below to discuss any work opportunities.
         </p>

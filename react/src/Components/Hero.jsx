@@ -9,8 +9,8 @@ const Hero = () => {
           <h1 className="lg:text-7xl text-4xl lg:m-2 m-1 font-semibold">I'm </h1>
           <h1 className="lg:text-7xl text-4xl lg:m-2 m-1 font-semibold text-yellow-300">Smith</h1>
         </div>
-        <h1 className="lg:text-7xl text-4xl lg:m-2 m-1 font-semibold">Website Designer</h1>
-        <p className="lg:text-2xl text-xl m-3 font-light lg:w-170 w-80 text-gray-300">
+        <h1 className="lg:text-7xl text-3xl lg:m-2 m-1 font-semibold">Website Designer</h1>
+        <p className="lg:text-2xl text-lg m-3 font-light lg:w-170 w-80 text-gray-300">
           I am a skilled and passionate web designer with experience in creating
           visually appealing and user-friendly websites.
         </p>
