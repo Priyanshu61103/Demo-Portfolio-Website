@@ -52,7 +52,7 @@ const Contact = () => {
               type="text"
               placeholder="Your Name"
               className="lg:w-200 w-70 p-2"
-              name="user_name"
+              name="visitor_name"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ const Contact = () => {
               type="email"
               placeholder="Your Email"
               className="lg:w-200 w-70 p-2"
-              name="user_email"
+              name="visitor_email"
             />
           </div>
         </div>
